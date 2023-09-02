@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 html body{
     width: 100%;
@@ -178,51 +179,46 @@ html body{
     width: 100%;
     min-height: 100vh;
     margin-left: 8px;
-    margin-top: 10px;
    
 }
 nav{
-    position: sticky;
-    width: 100%;
+    position: fixed;
+    width: 80%;
     top: 0;
+    /* right: 0; */
     height: 60px;
-    background-color: #101010;
-    display: flex;
-    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.242);
+    border-bottom: 1px solid #717171;
+    display:flex;
+    justify-content: space-between; 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     align-items: center;
-    z-index: 99;
-    
 }
 .btn-sec2{
   display: flex;
   margin-right: 20px;
   gap: 20px;
- 
 }
 .left-arrow{
     margin-left: 20px;
     margin-right: 10px;
-    color: #636060;
-    cursor: not-allowed;
+    color: #a3a1a1;
+    cursor: pointer;
 }
 .right-arrow{
-    color: #636060;
+    color: #a3a1a1;
     cursor: not-allowed;
 }
 .left-arrow:hover{
-    color: #aeaaaa;
-}
-.right-arrow:hover{
-    color: #aeaaaa;
+    color: #ffffff;
 }
 .sign-up{
     padding: 5px 20px;
     border-radius: 40px;
     border: none;
     background-color: transparent;
-    color: #636060;
+    color: #cfc9c9;
     font-size: 17px;
     font-weight: 501;
     cursor: pointer;
@@ -235,88 +231,154 @@ nav{
     font-weight: 501;
     cursor: pointer;
 }
-.focus{
-   margin-top: 5px; 
-   background: rgb(0,0,0);
-   background: linear-gradient(0deg, rgba(0,0,0,0.9389005602240896) 52%, rgba(48,48,48,1) 81%);
+.banner-front{
+    margin: 0;
+   
+}
+.image{
+    margin: 0;
+    margin-bottom: -64px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9389005602240896) 52%, rgba(48,48,48,1) 81%);
     width: 100%;
-    height: 400px;
-}
-.f-c-1 h4{
-  color: #fff;
-}
-.focus-cart a {
-    text-decoration: none;  
-}
-.Spotify-playlist{
-    margin-top: 5px; 
-    width: 100%;
-    height: 400px;
-}
-.Sound-india{
-    margin-top: 5px; 
-    width: 100%;
-    height: 400px;
-}
-.focus-text{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    margin-right: 30px;  
-}
-.focus-cart{
-    display: flex;
-}
-.f-p{
-    color: #bab4b4;
-    font-size: 15px;
-    font-weight: 501;
-    margin-top: 10px;
-}
-.f-h{
-    padding-left: 10px;
-    font-size: 28px;
-}
-.f-c-1{
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 17.5%;
-    height: 300px;
-    background-color: #141313;
-    border-radius: 10px;
-    position: relative;
-}
-.f-c-1 h4{
-    padding-left: 18px;
-}
-.f-c-1 img{
-    width: 90%;
-    margin: 10px 12px;
+    height: 320px;
+    padding: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.f-c-1 p{
-    padding-left: 20px;
-    padding-right: 15px;
-    color: #A7A7A7;
-    font-size: 16px;
+.image img{
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
+   object-position: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
 }
-.circle-play svg{
-    color: #1FDF64;
+.img-text{
     position: absolute;
-    top: 49%;
-    right: 7%;
-    display: none;
+    top: 10%;
+    left: 25%;
 }
-.f-c-1:hover .circle-play svg{
-  display: block;
+.img-text h2{
+    font-size: 70px;
 }
-.f-c-1:hover{
-    background-color: #272626;
+.img-text p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 501;
 }
-.fc-flex{
+.list{
+  margin: 0;
+  width: 100%;
+  min-height: 60vh;
+  background: rgb(90,49,18);
+  background: linear-gradient(180deg, rgba(90,49,18,1) 4%, rgba(0,0,0,1) 36%);
+
+ 
+}
+.list-icon{
+    padding-left: 60px;
+    padding-top: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.list-icon svg{
+   margin-left: 20px;
+   align-items: center;
+   transform: scale(1);
+}
+.list-icon svg:hover{
+    transform: scale(1.1);
+}
+.circle{
+    color: #1FDF64;
+    background-color: black;
+    border-radius: 60%; 
+}
+.dots:hover, .heart:hover{
+    color: #ffff;
+}
+.heart{
+    color: #aba5a5;
+}
+.dots{
+    color: #aba5a5;
+}
+.des{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    border-bottom: .2px solid rgb(90, 88, 88);
+}
+.des li{
+    list-style: none;
+    text-align: center;
+    font-weight: 501;
+
+}
+.des-2{
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+  
+}
+.des-2:hover{
+    background-color: #322f2f;
+  
+}
+.des-2:nth-last-child(1){
+    padding-bottom: 10px;
+    border-bottom: 30px solid rgb(90,49,18);
+}
+.des-2 li {
+    list-style: none;
+}
+.clock{
+    margin-right: 20px;
+}
+.song-title{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.song-title img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.song-title p{
+    font-weight: 501;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.song-title span{
+    font-size: 14px;
+    color: #878585;
+    font-weight: 501;
+    cursor: pointer;
+}
+.album{
+    margin-left: -104px;
+    color: #878585;
+    font-weight: 501;
+}
+.duration{
+    margin-right: 32px;
+    color: #878585;
+    font-weight: 501;
+}
+.time{
+    color: #878585;
+    font-weight: 501;
 }
 .footer{
     display: flex;
@@ -324,23 +386,20 @@ nav{
     margin-top: 40px;
     margin-left: 20px;
     margin-bottom: 50px;
-
+  
 }
 .footer li{
     color: #636060;
     list-style: none;
     padding: 5px 0;
     font-size: 15px;
-    
-  
 }
 .social-link{
     margin-right: 50px;
-   
+    cursor: pointer; 
 }
 .twitter{
     margin-left: 15px;
-
 }
 .instagram{
    margin-left: 15px;

@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    width: 40%;
+    min-height: 100vh;
+    /* background-color: lightgray; */
+    padding: 20px;
+    margin: 40px auto;
+}
+.logo svg{
+   width: 22%;
+   height: 22% ;
+   transform: translate(180%,30%);
+
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.facebook{
+    width: 65%;
+    
+}
+.google{
+    width: 65%;
+    
+}
+
+.facebook:hover{
+    transform: scale(1.08);
+}
+.google:hover{
+    transform: scale(1.08);
+}
+.link h2{
+   margin-top: 50px;
+   margin-bottom: 30px;
+   font-size: 25px;
+}
+
+.facebook{
+    margin-bottom: 20px;
+    padding: 10px 80px;
+    color: white;
+    background-color: #384F81;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: transform .2s;
+
+}
+.facebook p{
+    margin: 0;
+    
+}
+.google p{
+    margin: 0;
+}
+.google{
+    margin-bottom: 20px;
+    padding: 10px 80px;
+    color: #535353;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #535353;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.hr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    color: #CCCCCC;
+    font-weight: 601;
+    font-size: 18px;
+    
+}
+.hrtag{
+    width: 25%;
+    border: .1px solid #CCCCCC;
+}
+.username h5{
+    margin: 0;
+    padding-top: 5px;
+    text-decoration: underline;
+    color: #117A37;
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: 501;
+}
+.call h5{
+    margin: 0;
+    padding-top: 2px;
+    color: #070707;
+    font-size: 13px;
+    padding-left: 5px;
+    font-weight: 501;
+}
+.username{
+    margin: 22px 0;
+    margin-left: 25px;
+}
+.call{
+    margin: 22px 0;
+    margin-left: 25px;
+}
+.username input:hover{
+    border: 1.8px solid #117A37;
+}
+.call input:hover{
+    border: 1.8px solid #117A37;
+}
+.username p{
+    font-size: 15px;
+    font-weight: 501;
+    margin: 0;
+    padding: 10px 0;
+
+}
+.call p{
+    font-size: 15px;
+    font-weight: 501;
+    margin: 0;
+    padding: 10px 0;
+
+}
+.username input{
+    width: 85%;
+    padding: 10px 10px;
+    border: 1.8px solid rgb(139, 137, 137);
+    border-radius: 5px;
+    font-size: 18px;
+    outline: black;
+}
+.call input{
+    width: 85%;
+    padding: 10px 10px;
+    border: 1.8px solid rgb(139, 137, 137);
+    border-radius: 5px;
+    font-size: 18px;
+    outline: black;
+}
+.user-pass{
+    margin-bottom: 22px;
+    margin-left: 25px;
+}
+.user-pass p{
+    font-size: 15px;
+    font-weight: 501;
+    margin: 0;
+    padding: 10px 0;
+
+}
+.us {
+    width: 85%;
+    padding: 0px 10px;
+    border: 1.8px solid rgb(139, 137, 137);
+    border-radius: 5px;
+    font-size: 18px;
+    outline: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 25px; */
+
+}
+.us:hover{
+    border: 1.8px solid #117A37;
+}
+.us input {
+   
+    width: 80%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: black;
+}
+.svg-eye{
+    color: #535353;
+}
+.date-detail{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.date-detail p{
+    margin: 0;
+
+    
+}
+.year:hover{
+    border: 1.5px solid black;
+}
+.month:hover{
+    border: 1.5px solid black;
+}
+.date:hover{
+    border: 1.5px solid black;
+}
+.date-detail h5{
+    font-size: 15px;
+    font-weight: 501;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+.year{
+    padding: 10px 10px;
+    width: 23%;
+    border-radius: 5px;
+    border: .5px solid rgb(143, 142, 142);
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 501;
+    outline: none;
+}
+
+.month{
+    padding: 10px 20px 10px 10px;
+    color: #535353;
+    width: 40%;
+    background-color: transparent;
+    border: .5px solid rgb(143, 142, 142) ;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 510;
+    color: #535353;
+    text-align: center;
+}
+.date{
+    padding: 10px;
+    width: 10%;
+    border: .5px solid  rgb(143, 142, 142);
+    border-radius: 5px;
+    font-weight: 510;
+    font-size: 16px;
+    color: #535353;
+    outline: none;
+}
+.radio{
+   
+    width: 75%;
+    /* background-color: red; */
+    margin-left: 15px;
+}
+.radio h5{
+    font-size: 15px;
+    font-weight: 501;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+.radio input{
+
+    margin-right: 10px;
+    margin-bottom: 16px;
+    font-weight: 510;
+    
+}
+.radio label{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 510;
+}
+.male{
+    accent-color:#117A37; 
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10px;
+
+}
+.checkbox div{
+    margin-top: 20px;
+}
+.checkbox div input{
+    accent-color:#117A37;
+}
+.checkbox div label{
+    font-size: 15px;
+    font-weight: 502;
+}
+.terms{
+    margin: 30px 0;
+}
+.terms p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 410;
+
+}
+.terms p span{
+    color: #117A37;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.sign-btn{
+    padding: 15px 40px;
+    background-color: #1FDF64;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 501;
+     cursor: pointer;
+}
+.sign-btn:hover{
+    transform: scale(1.08);
+}
+.account{
+    text-align: center;
+    margin: 20px 0;
+
+}
+.account span{
+    color: #1FDF64;
+    text-decoration: underline;
+    cursor: pointer;
+}
